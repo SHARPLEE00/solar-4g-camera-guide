@@ -17,7 +17,8 @@ This guide cuts through the noise with **data-driven, vendor-neutral advice** fo
 ## 📖 Table of Contents
 
 1. [Solar 4G vs. Wired CCTV: When to Choose What](#solar-4g-vs-wired-cctv)
-2. [Key Specifications Explained](#key-specifications)
+2. [AOV (Always On Video) — The 2026 Game-Changer](#aov-always-on-video)
+3. [Key Specifications Explained](#key-specifications)
 3. [Certification & Compliance Checklist](#certifications)
 4. [Pricing Tiers & What You Get](#pricing-tiers)
 5. [Use Case Guides](#use-cases)
@@ -39,6 +40,57 @@ This guide cuts through the noise with **data-driven, vendor-neutral advice** fo
 | **5-Year TCO (8 cameras)** | $1,200–$3,500 | $3,000–$8,000 |
 
 **Key insight:** For locations without reliable power or internet — farms, construction sites, warehouses, rural properties — solar 4G cameras reduce total cost of ownership by **40–60%** compared to wired CCTV (Source: IPVM, 2025).
+
+---
+
+## AOV (Always On Video)
+
+**AOV (Always On Video)** is the most significant technology shift in solar security cameras since 2025. It fundamentally changes how solar cameras operate.
+
+### The Problem with Traditional Solar Cameras
+
+Traditional solar cameras use **PIR (Passive Infrared) motion detection** — they only record when triggered by movement. This means:
+
+- ❌ Events are missed if motion detection fails or is delayed
+- ❌ No continuous footage for forensic review
+- ❌ Slow wake-up time (1-3 seconds) means the first seconds of an event are lost
+- ❌ False triggers waste battery; missed events create security gaps
+
+### How AOV Works
+
+AOV cameras maintain an **ultra-low-power active state** 24/7:
+
+| Mode | Power Draw | What Happens |
+|------|-----------|--------------|
+| **AOV Standby** | ~0.5-1W | Camera captures frames every 2 seconds, AI analyzes scene |
+| **AOV Event** | ~3-5W | Full-resolution recording triggered by AI detection |
+| **Traditional PIR Standby** | ~0.1W | Camera sleeps, waits for IR heat signature |
+| **Traditional Full Recording** | ~5-8W | Continuous recording drains battery in hours |
+
+The breakthrough: AOV uses **AI-powered scene analysis** at ultra-low power rather than physical PIR sensors. The camera "sees" at all times but only consumes full power when something important happens.
+
+### AOV vs. PIR: Head-to-Head Comparison
+
+| Feature | AOV Camera | PIR Camera |
+|---------|-----------|------------|
+| **Recording Mode** | 24/7 continuous (low-res) + event-triggered (full-res) | Event-triggered only |
+| **Detection Method** | AI visual analysis | Passive infrared heat |
+| **Wake-up Time** | Instant (always awake) | 1-3 seconds |
+| **False Alarm Rate** | ~2-5% (AI filtering) | ~15-30% (animals, wind) |
+| **Missed Events** | Near zero | 10-20% estimated |
+| **Power Consumption** | ~1W standby / ~5W active | ~0.1W standby / ~5W active |
+| **Solar Panel Required** | 8-15W panel | 5-8W panel |
+| **Battery Backup** | 48-72 hours | 72-120 hours |
+| **Price Premium** | +15-25% over PIR | Baseline |
+| **Best For** | High-security, forensic needs | Basic perimeter monitoring |
+
+### Key Takeaway for B2B Buyers
+
+AOV is worth the premium for **any deployment where missed events have real cost** — livestock theft, construction site security, warehouse monitoring, or any application requiring continuous evidence. For basic perimeter alerts where PIR sufficiency is acceptable, traditional solar cameras remain cost-effective.
+
+**Market leaders offering AOV:** Hikvision (launched Nov 2025), LSVision (CS100), SolaGuard, Bokysee, JideTech.
+
+> 💡 **B2B tip:** When sourcing AOV cameras wholesale, verify the actual AOV standby power draw (should be <1.5W) and solar panel wattage. Some manufacturers label PIR cameras as "AOV" without true continuous scene analysis.
 
 ---
 
