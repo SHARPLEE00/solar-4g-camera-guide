@@ -419,6 +419,80 @@ This Edge AI knowledge reflects 2026 market developments. As NPUs become more ef
 
 ---
 
+
+
+## Multi-Camera Systems & Central Management
+
+For B2B deployments — farms, hotels, construction sites, warehouses — single cameras rarely suffice. This section covers how to design, deploy, and manage multi-camera solar 4G networks that scale.
+
+### System Architecture Options
+
+| Architecture | Complexity | Cost | Best For |
+|--------------|------------|------|----------|
+| **Standalone (No NVR)** | Low | $0 | <5 cameras, basic needs |
+| **Local NVR** | Medium | $200–800 | 8–32 cameras, on-premise |
+| **Cloud CMS** | Low | $15–50/cam/month | Multi-site, remote teams |
+| **Hybrid (NVR + Cloud)** | High | Medium-high | Enterprise, redundancy needs |
+
+**Key insight:** Solar 4G cameras generate significant data (2–10 GB/month per camera at moderate activity). Bandwidth and storage planning are non-negotiable for multi-camera deployments.
+
+### Bandwidth & Data Planning
+
+| Activity Level | Daily Data (per camera) | Monthly (per camera) | 8-Camera Site Monthly |
+|----------------|------------------------|----------------------|----------------------|
+| **Low** (10 events/day) | 100–300 MB | 3–9 GB | 24–72 GB |
+| **Medium** (30 events/day) | 300–800 MB | 9–24 GB | 72–192 GB |
+| **High** (100+ events/day) | 1–3 GB | 30–90 GB | 240–720 GB |
+
+**4G Data Plan Recommendations:**
+- Minimum: 10 GB/month per camera (light use, event-based recording)
+- Recommended: 30 GB/month per camera (moderate use, AOV standby)
+- Heavy use: 50–100 GB/month (continuous recording + cloud upload)
+
+> ⚠️ **Cost trap:** Many "unlimited" 4G plans throttle after 20–50 GB. Verify fair use policies with your carrier.
+
+### Central Management Platforms (CMS)
+
+Popular platforms for solar 4G camera management:
+
+| Platform | Type | Strengths | Pricing |
+|----------|------|-----------|---------|
+| **Hikvision Hik-Connect** | Cloud | Full ecosystem, AI features | Free + $15/mo NVR |
+| **Reolink Cloud** | Cloud | User-friendly, P2P | Free tier + $9.99/mo |
+| **Milestone Open** | Cloud + On-prem | Enterprise-grade, 3rd-party | Custom pricing |
+| **Spycamfx** | Cloud | Solar-specific, bulk management | $5–10/cam/mo |
+| **iCloud** | Cloud | Apple ecosystem integration | Free (iCloud+ required) |
+| **Self-Hosted (Frigate/ZoneMinder)** | Local | Full control, no subscription | Hardware only |
+
+**For B2B Solar Deployments:**
+- **Small business (5–20 cameras):** Hik-Connect or Reolink Cloud
+- **Enterprise (20+ cameras):** Milestone or self-hosted Frigate on mini-PC
+- **Multi-site operators:** Cloud CMS with bulk device management is essential
+
+### Multi-Site Management Best Practices
+
+1. **Hierarchical organization:** Group cameras by site → building → zone
+2. **Role-based access:** Site managers see only their locations; HQ sees all
+3. **Alert routing:** Different notification rules per site (e.g., farm A = SMS, farm B = email)
+4. **Bulk firmware updates:** Schedule during low-activity hours; test on 1–2 cameras first
+5. **Data retention policies:** Local NVR = 7–30 days; cloud = 30–90 days typical
+6. **Offline fallback:** Solar cameras must cache footage locally during 4G outages
+
+### Scalability Planning
+
+| Deployment Size | Recommended Architecture | Key Considerations |
+|-----------------|--------------------------|---------------------|
+| **1–5 cameras** | Standalone + cloud app | Simple, no infrastructure |
+| **5–20 cameras** | Cloud CMS + local storage | Balance cost and features |
+| **20–100 cameras** | Hybrid NVR + cloud access | Need dedicated bandwidth |
+| **100+ cameras** | Enterprise NVR + fiber backhaul | Professional installation required |
+
+**Network topology for large sites:**
+- Star topology: Each camera connects independently (simpler, higher bandwidth)
+- Mesh topology: Cameras relay through each other (reduces cellular cost, adds latency)
+
+> 💡 **B2B tip:** When presenting multi-camera proposals to enterprise clients, always include TCO calculations showing per-camera data costs, cloud subscription fees, and maintenance overhead. Hidden data costs are the #1 cause of client dissatisfaction in solar 4G deployments.
+
 ## Southeast Asia Market Intelligence
 
 ### Market Size & Growth
