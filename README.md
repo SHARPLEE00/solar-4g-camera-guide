@@ -569,6 +569,175 @@ B2B cameras prioritize: metal housings (vs. plastic), higher IP ratings, commerc
 
 ---
 
+## Technical FAQ: 4G Bands, IP Ratings & Solar Specifications
+
+This section answers the technical questions B2B buyers ask most — but rarely get detailed answers for.
+
+### 4G LTE Bands: Why Your Market's Frequency Matters
+
+Solar 4G cameras must support local carrier frequencies. Using an incompatible camera means no signal, no deployment, no sale.
+
+**Global Band Basics:**
+- **Band 1 (2100 MHz):** Universal, but crowded
+- **Band 3 (1800 MHz):** Most common globally, excellent penetration
+- **Band 7 (2600 MHz):** High speed, poor building penetration
+- **Band 8 (900 MHz):** Best rural coverage, excellent penetration
+- **Band 20 (800 MHz):** EU standard, great rural reach
+- **Band 28 (700 MHz):** Asia-Pacific rural coverage
+
+**Southeast Asia 4G Band Requirements:**
+
+| Country | Primary Bands | Key Carriers | Notes |
+|---------|---------------|--------------|-------|
+| Vietnam | B3, B8, B40 | Viettel, MobiFone, VinaPhone | B40 (2300 MHz) for Viettel is critical |
+| Thailand | B1, B3, B8, B41 | AIS, TrueMove, DTAC | B41 (2500 MHz) for TrueMove |
+| Indonesia | B1, B3, B5, B8 | Telkomsel, Indosat, XL | B5 (850 MHz) for island coverage |
+| Philippines | B1, B3, B5, B28 | Globe, Smart, Dito | B28 for rural provinces |
+| Malaysia | B1, B3, B7, B8 | Maxis, Celcom, Digi | Well-covered but varies by state |
+
+**B2B Tip:** Always confirm band compatibility with your local carrier before ordering. Most quality manufacturers offer multi-band models (B1/B3/B5/B7/B8/B20/B28/B40) that work across 90%+ of global networks — but at 15-20% price premium.
+
+### IP67 vs IP66: What Actually Matters for Solar Cameras
+
+IP (Ingress Protection) ratings confuse many buyers. Here's what solar camera deployments actually face:
+
+**IP67 Breakdown:**
+- **First digit (6):** Complete protection against dust ingress — mandatory for outdoor solar cameras
+- **Second digit (7):** Immersion protection up to 1 meter for 30 minutes
+
+**IP66 Breakdown:**
+- **First digit (6):** Same dust protection
+- **Second digit (6):** Powerful water jet protection — but NOT immersion
+
+**For Solar 4G Cameras:**
+- **IP67 is standard** for permanent outdoor installations (farms, warehouses, construction sites)
+- **IP66 acceptable** for covered installations (parking structures, covered porches)
+- **IP65 minimum** for temporary/portable deployments
+
+**Real-world consideration:** Solar cameras face unique challenges — direct sunlight UV degradation, temperature cycling (-10°C to +50°C in SEA), monsoonal flooding. IP rating is necessary but not sufficient. Look for:
+- UV-resistant housing materials (polycarbonate vs. ABS plastic)
+- Wide operating temperature range (-20°C to +55°C)
+- Corrosion-resistant mounting hardware (stainless steel or marine-grade)
+
+### Solar Panel Specifications Decoded
+
+Not all "solar cameras" have effective solar panels. Here's how to evaluate:
+
+**Wattage Reality Check:**
+- **2W-5W panels:** Decorative only — cannot maintain charge in SEA climate
+- **6W-8W panels:** Minimum for light-use (10 alerts/day)
+- **10W-15W panels:** Recommended for moderate use (30 alerts/day + AOV)
+- **20W+ panels:** Heavy use, continuous streaming, PTZ cameras
+
+**Efficiency Ratings:**
+- **Monocrystalline:** 18-22% efficiency — best for limited surface area
+- **Polycrystalline:** 15-18% efficiency — acceptable, slightly larger
+- **Amorphous/thin-film:** 10-14% efficiency — avoid for security cameras
+
+**B2B Evaluation Checklist:**
+- [ ] Panel wattage ≥ camera consumption × 1.5 (for cloudy days)
+- [ ] Monocrystalline cells (check product specs)
+- [ ] Anti-reflective coating (improves low-light performance)
+- [ ] Panel angle adjustable (optimize for installation latitude)
+- [ ] ETL or TUV certified cells (quality assurance)
+
+### Battery Capacity: mAh vs. Real-World Days of Autonomy
+
+Manufacturer mAh ratings often overpromise. Here's the math:
+
+**Capacity Calculation:**
+```
+Daily camera consumption = (standby mA × hours) + (active recording mA × minutes/day)
+Typical: 50mA standby × 23 hours + 300mA active × 60 minutes = ~2.2 Ah/day
+```
+
+**20,000 mAh Battery Reality:**
+
+| Usage Pattern | Daily Drain | Days of Autonomy | Notes |
+|---------------|-------------|------------------|-------|
+| Light (5 events/day) | 0.5-1 Ah | 20-40 days | Best case |
+| Medium (20 events/day) | 1.5-2 Ah | 10-13 days | Typical B2B use |
+| Heavy (AOV always-on) | 3-4 Ah | 5-7 days | Continuous streaming |
+
+**Battery Chemistry Matters:**
+- **LiFePO4 (Lithium Iron Phosphate):** 2,000+ cycles, safer, better cold performance — recommended
+- **Li-ion (Lithium Ion):** 500-800 cycles, cheaper, adequate for 2-3 year deployments
+- **Li-Po (Lithium Polymer):** Avoid — higher failure rate in outdoor temperature swings
+
+**Temperature Performance:**
+- LiFePO4: -20°C to +55°C operating range — best for SEA and temperate climates
+- Li-ion: -10°C to +45°C — avoid in high-altitude or northern deployments
+
+### Local Storage: SD Card vs. NVR vs. Cloud
+
+Three storage paradigms, different cost/performance trade-offs:
+
+**SD Card (Edge Storage):**
+- **Pros:** No recurring cost, works offline, privacy-compliant
+- **Cons:** Limited capacity (256GB max typical), physically accessible, no remote backup
+- **Capacity math:** 256GB stores ~7 days of motion-triggered 1080p recording (100-200 events/day)
+- **Recommended for:** Single-camera deployments, privacy-sensitive sites, areas with unreliable connectivity
+
+**NVR (Network Video Recorder):**
+- **Pros:** Centralized, higher capacity (2-16TB), local retention, ONVIF compatibility
+- **Cons:** Upfront hardware cost ($200-800), requires indoor installation, power dependent
+- **Capacity math:** 8-channel NVR with 4TB stores 30+ days of 8-camera 1080p
+- **Recommended for:** Multi-camera sites (4+ cameras), sites with reliable power and indoor space
+
+**Cloud Storage:**
+- **Pros:** Remote access, automatic backup, scalable, AI features often included
+- **Cons:** Recurring subscription ($5-20/cam/month), data privacy concerns, bandwidth dependent
+- **Recommended for:** Multi-site operators, remote management needs, sites requiring evidence integrity
+
+**B2B Recommendation:** For most SEA deployments, use hybrid approach — SD card for redundancy (7-day loop) + cloud for critical events. This provides offline resilience plus remote access without full cloud subscription cost.
+
+### Night Vision: IR vs. Color Night Vision vs. Thermal
+
+Critical for 24/7 security operations:
+
+**IR (Infrared) Night Vision:**
+- Standard: 850nm IR LEDs, 20-30m range, black-and-white image
+- Premium: 940nm "no-glow" LEDs, less visible but shorter range
+- Limitation: Cannot identify clothing/vehicle colors
+
+**Color Night Vision (StarLight/Full Color):**
+- Uses large aperture (f/1.0 or f/1.4) + large sensor (1/1.8" or larger)
+- Produces color image down to 0.001 lux (moonlight conditions)
+- Requires some ambient light — not pitch-black darkness
+- Recommended for: Perimeter security where color identification matters
+
+**Thermal Cameras:**
+- Detects heat signatures, works in complete darkness, fog/smoke penetration
+- Cannot identify faces, only body shape/size
+- Used for: Perimeter intrusion detection (people vs. animals), fire prevention
+- Cost: 3-5× standard camera price — typically integrated into PTZ systems
+
+**B2B Recommendation:** For most applications, standard IR is sufficient. Add color night vision for entry/exit points where identifying clothing or vehicle color matters. Thermal is for specialized perimeter protection — not general deployment.
+
+### AI Detection: What Features Actually Work
+
+Marketing AI features vary wildly in real-world performance:
+
+**Proven AI Features (reliable in 2026):**
+- **Human/Vehicle detection:** 95%+ accuracy in good conditions, reduces false alerts by 80%+
+- **Vehicle type classification:** Distinguishes car/truck/motorcycle/bicycle
+- **Line crossing/ intrusion detection:** Configurable zones, works reliably for perimeters
+- **Face detection:** Limited utility at distance; better for access control integration
+
+**Overhyped AI Features (verify before buying):**
+- **Facial recognition:** Requires high-resolution close-up, cloud processing typically needed
+- **License plate recognition (LPR):** Effective only at specific angles and speeds (<30km/h)
+- **Object abandonment detection:** High false positive rate in outdoor environments
+- **Crowd counting:** Accuracy varies significantly with camera angle and density
+
+**Edge AI vs. Cloud AI:**
+- **Edge AI (on-camera):** Processes locally, no data upload, faster response, limited processing power
+- **Cloud AI:** More powerful processing, learns from massive datasets, requires connectivity, privacy implications
+
+**B2B Recommendation:** Prioritize on-camera human/vehicle detection for solar 4G cameras — reduces bandwidth consumption by 70%+ (only uploads relevant events) and enables reliable offline operation.
+
+---
+
 ## Resources
 
 - 📖 [Solar 4G vs Wired CCTV: Complete Comparison](https://solaguard.net/guides/solar-4g-vs-wired-cctv.html)
